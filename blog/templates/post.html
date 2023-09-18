@@ -52,17 +52,17 @@ body {
 </div>
 
 <div class="row">
-    {% for post in posts %}
     <div class="leftcolumn">
         <div class="card">
-            <a style="text-decoration: none; color: black;" href="/post/{{post.id}}">
-                <h2>{{post.title}}</h2>
-                <h5>{{post.created_at}}</h5>
-                <p>{{post.body|truncatewords:30}}</p>
-            </a>
+            <h2>{{post.title}}</h2>
+            <h5>{{post.created_at}}</h5>
+            <p>{{post.body}}</p>
         </div>
     </div>
-    {% endfor %}
+</div>
+
+<div class="row">
+    <a href="/"><input type="submit" value="Home"></a>
 </div>
 
 </body>
